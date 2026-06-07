@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>CabSplit</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>CabSplit</h1>
+    <p>Find people going in the same direction and share one cab.</p>
+
+    <div class="card">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="text" id="phone" placeholder="Phone Number">
+        <input type="text" id="pickup" placeholder="Pickup Location">
+        <input type="text" id="dropLocation" placeholder="Drop Location">
+        <input type="time" id="time">
+
+        <button onclick="createRide()">Find Cab Partner</button>
+    </div>
+
+    <h2>Matched Passengers</h2>
+    <div id="matches"></div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
