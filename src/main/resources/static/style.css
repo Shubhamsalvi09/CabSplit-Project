@@ -34,8 +34,8 @@ button {
     width: 95%;
     padding: 12px;
     background: #white;
-    color: white;
-    border: none;
+    color: black;
+    border: black;
     border-radius: 8px;
     cursor: pointer;
 }
