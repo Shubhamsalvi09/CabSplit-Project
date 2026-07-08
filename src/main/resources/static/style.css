@@ -33,10 +33,10 @@ input {
 button {
     width: 95%;
     padding: 12px;
-    background: #white;
-    color: black;
+    background: #black;
+    color: white;
     border: black;
-    border-radius: 8px;
+    border-radius: 20px;
     cursor: pointer;
 }
 
