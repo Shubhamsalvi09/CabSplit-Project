@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+
+metadata:
+  name: cabsplit
+  namespace: cabsplit
+  labels:
+    app: cabsplit
+
+spec:
+  replicas: 2
+
+  selector:
+    matchLabels:
+      app: cabsplit
+
+  template:
+    metadata:
+      labels:
+        app: cabsplit
+
+    spec:
+      containers:
+        - name: cabsplit
+
+          image: 371397508701.dkr.ecr.ap-south-1.amazonaws.com/cabsplit:v1
+
+          imagePullPolicy: Always
+
+          ports:
+          - containerPort: 8080
