@@ -23,7 +23,7 @@ spec:
       containers:
         - name: cabsplit
 
-          image: 371397508701.dkr.ecr.ap-south-1.amazonaws.com/cabsplit:v21
+          image: 371397508701.dkr.ecr.ap-south-1.amazonaws.com/cabsplit:v22
 
           imagePullPolicy: Always
 
