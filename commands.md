@@ -1,0 +1,15 @@
+## Add Helm Repo
+
+```bash
+helm repo add prometheus-community https://prometheus-community.github.io/helm-charts
+helm repo update
+```
+
+## Install Monitoring Stack
+
+```bash
+kubectl create namespace monitoring
+
+helm install monitoring prometheus-community/kube-prometheus-stack \
+-n monitoring
+```
